@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\dashboardController;
 use App\Http\Controllers\admin\transaction\dealApprovalController;
+use App\Http\Controllers\admin\transaction\dealEntryController;
 use App\Http\Controllers\auth\loginController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +22,10 @@ Route::get('/', [loginController::class, 'login'])->name('login');
 Route::prefix('admin')->group(function() {
     Route::get('dashboard', [dashboardController::class, 'dashboard'])->name('admin.dashboard');
 
+    // DEAL ENTRY
+    Route::get('transaction/dealentry/fixed-income', [dealEntryController::class, 'fixedIncome'])->name("admin.deal.fixed-income");
+
     // TRANSACTION
-    Route::get('transaction/deal-approval', [dealApprovalController::class, 'dealApproval'])->name('admin.transaction.dealapproval');
+    Route::get('transaction/approval/deal-approval', [dealApprovalController::class, 'dealApproval'])->name('admin.transaction.dealapproval');
 
 });

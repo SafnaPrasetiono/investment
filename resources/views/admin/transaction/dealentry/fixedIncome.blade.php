@@ -1,11 +1,11 @@
 @extends('admin.layouts.panel')
 
 @section('head')
-    <title>Investment - Deal Approval</title>
+    <title>Investment - Deal Entry fixed Income</title>
 @endsection
 
 @section('pages')
-    @livewire('admin.transaction.approval.deal-approval')
+    @livewire('admin.transaction.dealentry.fixed-income')
 @endsection
 
 @section('script')

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/app/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/icons/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/dist/css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/dist/css/loading.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     @livewireStyles
